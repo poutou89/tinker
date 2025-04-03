@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body>
-    <header class="flex items-center justify-around absolute top-0 left-0 p-4 w-full">
+    <header class="flex flex-col md:flex-row items-center justify-around absolute top-0 left-0 p-4 w-full">
         <a href=""><h1 class="text-4xl font-titre font-black text-white uppercase hover:opacity-70"><span class="text-5xl text-jaune">t</span>inker</h1></a>
         <nav>
-            <ul class="flex gap-12 uppercase text-white">
+            <ul class="sm:flex hidden flex-col md:flex-row md:gap-12 gap-2 p-8 md:p-0 text-center md:text-start uppercase text-white">
                 <li><a href="" class="hover:underline">home</a></li>
                 <li><a href="" class="hover:underline">about us</a></li>
                 <li><a href="" class="hover:underline">portfolio</a></li>
@@ -18,17 +18,18 @@
                 <li><a href="" class="hover:underline">contact us</a></li>
             </ul>
         </nav>
+        <div class="flex sm:hidden pt-10"><svg xmlns="http://www.w3.org/2000/svg" height="60" width="52" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></div>
     </header>
     <main>
-        <section id="banner" class="bg-[url('../assets/img/banner_bg.jpg')] bg-cover bg-bottom h-screen w-full font-body font-medium">
-            <div class="banner-text flex flex-col items-center justify-center pt-80 pb-52">
-                <h2 class="text-4xl text-white">Awesome <span class="uppercase text-bleu font-bold">html5</span> Template <span class="uppercase text-orangefoncee font-semibold">tinker</span></h2>
-                <p class="text-lg text-white text-center w-2/6 py-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima fuga cupiditate nobis placeat labore deleniti sint natus animi, doloremque eos, sequi exercitationem accusamus tempora fugit, minus distinctio autem?</p>
+        <section id="banner" class="bg-[url('../assets/img/banner_bg.jpg')] bg-cover bg-bottom md:h-screen w-full font-body font-medium">
+            <div class="banner-text flex flex-col items-center justify-center sm:pt-80 pt-48 pb-52">
+                <h2 class="text-4xl text-center text-white">Awesome <span class="uppercase text-bleu font-bold">html5</span> Template <span class="uppercase text-orangefoncee font-semibold">tinker</span></h2>
+                <p class="text-lg text-white text-center md:w-2/6 py-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima fuga cupiditate nobis placeat labore deleniti sint natus animi, doloremque eos, sequi exercitationem accusamus tempora fugit, minus distinctio autem?</p>
                 <a href="" class="uppercase bg-white hover:bg-transparent hover:text-white hover:border-2 border-2 rounded-full py-3 px-6 font-semibold">let's start</a>
             </div>
         </section>
-        <section id="options" class="bg-[url('../assets/img/about-bg.jpg')] bg-cover bg-center h-screen w-full font-body text-white font-semibold flex justify-center  gap-12 pt-60 pb-32">
-            <div class="card flex flex-col w-1/6 text-center items-center  gap-8">
+        <section id="options" class="bg-[url('../assets/img/about-bg.jpg')] bg-cover bg-center md:h-screen w-full font-body text-white font-semibold flex flex-col md:flex-row items-center justify-center  md:gap-12 gap-20 md:pt-60 pt-12 pb-32">
+            <div class="card flex flex-col md:w-1/6 w-5/6 text-center items-center  gap-8">
                 <div class="image bg-jaune w-32 h-32 flex items-center justify-center rounded-full border-white border-4">
                     <img src="assets/img/service_icon_01.png" alt="">
                 </div>
@@ -37,7 +38,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae praesentium eum labore, ipsum porro nostrum veniam dolorem doloremque inventore ipsam dicta corrupti.</p>
                 <a href="" class="bg-bleu rounded-full py-3 px-5 transition-colors hover:bg-white hover:text-bleu  uppercase">Continue reading</a>
             </div>
-            <div class="card flex flex-col w-1/6 text-center items-center  gap-8">
+            <div class="card flex flex-col md:w-1/6 w-5/6 text-center items-center  gap-8">
                 <div class="image bg-jaune w-32 h-32 flex items-center justify-center rounded-full border-white border-4">
                     <img src="assets/img/service_icon_02.png" alt="">
                 </div>
@@ -46,7 +47,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae praesentium eum labore, ipsum porro nostrum veniam dolorem doloremque inventore ipsam dicta corrupti.</p>
                 <a href="" class="bg-bleu rounded-full py-3 px-5 transition-colors hover:bg-white hover:text-bleu  uppercase">Continue reading</a>
             </div>
-            <div class="card flex flex-col w-1/6 text-center items-center  gap-8">
+            <div class="card flex flex-col md:w-1/6 w-5/6 text-center items-center  gap-8">
                 <div class="image bg-jaune w-32 h-32 flex items-center justify-center rounded-full border-white border-4">
                     <img src="assets/img/service_icon_03.png" alt="">
                 </div>
@@ -55,7 +56,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae praesentium eum labore, ipsum porro nostrum veniam dolorem doloremque inventore ipsam dicta corrupti.</p>
                 <a href="" class="bg-bleu rounded-full py-3 px-5 transition-colors hover:bg-white hover:text-bleu  uppercase">Continue reading</a>
             </div>
-            <div class="card flex flex-col w-1/6 text-center items-center  gap-8">
+            <div class="card flex flex-col md:w-1/6 w-5/6 text-center items-center  gap-8">
                 <div class="image bg-jaune w-32 h-32 flex items-center justify-center rounded-full border-white border-4">
                     <img src="assets/img/service_icon_04.png" alt="">
                 </div>
@@ -65,8 +66,8 @@
                 <a href="" class="bg-bleu rounded-full py-3 px-5 transition-colors hover:bg-white hover:text-bleu  uppercase">Continue reading</a>
             </div>
         </section>
-        <section id="gallery" class="flex h-screen">
-            <div class="left w-1/3 bg-bleu text-white flex flex-col justify-center p-36 font-medium">
+        <section id="gallery" class="flex flex-col md:flex-row h-screen md:text-start text-center">
+            <div class="left md:w-1/3 bg-bleu text-white flex flex-col justify-center xl:p-36 p-10 font-medium">
                 <h2 class="uppercase font-bold text-2xl">our gallery</h2>
                 <div class="trait border-2 border-white opacity-50 w-full h-1 my-4"></div>
                 <p>Chia hot chicken la croix ugh dreamcatcher man bun squid vaporwave kinfolk.</p>
@@ -78,17 +79,17 @@
                     <li><a href="" class="hover:text-orangefoncee">Animation</a></li>
                 </ul>
             </div>
-            <div class="right w-2/3 p-20 pr-60 grid grid-cols-2 h-screen">
-                <div class="h-64"><img src="assets/img/portfolio_big_item_01.jpg" class="h-full w-full object-cover"></div>
-                <div class="h-64"><img src="assets/img/portfolio_big_item_02.jpg" class="h-full w-full object-cover"></div>
-                <div class="h-64"><img src="assets/img/portfolio_big_item_03.jpg" class="h-full w-full object-cover"></div>
-                <div class="h-64"><img src="assets/img/portfolio_big_item_04.jpg" class="h-full w-full object-cover"></div>
-                <div class="h-64"><img src="assets/img/portfolio_big_item_05.jpg" class="h-full w-full object-cover"></div>
-                <div class="h-64"><img src="assets/img/portfolio_big_item_06.jpg" class="h-full w-full object-cover"></div>
+            <div class="right md:w-2/3 sm:p-20 p-4 xl:pr-60 grid md:grid-cols-2 grid-cols-3 h-screen">
+                <div class="md:h-64"><img src="assets/img/portfolio_big_item_01.jpg" class="h-full w-full object-cover"></div>
+                <div class="md:h-64"><img src="assets/img/portfolio_big_item_02.jpg" class="h-full w-full object-cover"></div>
+                <div class="md:h-64"><img src="assets/img/portfolio_big_item_03.jpg" class="h-full w-full object-cover"></div>
+                <div class="md:h-64"><img src="assets/img/portfolio_big_item_04.jpg" class="h-full w-full object-cover"></div>
+                <div class="md:h-64"><img src="assets/img/portfolio_big_item_05.jpg" class="h-full w-full object-cover"></div>
+                <div class="md:h-64"><img src="assets/img/portfolio_big_item_06.jpg" class="h-full w-full object-cover"></div>
             </div>
         </section>
-        <section id="commentaire" class="flex items-center flex-col bg-jaune pt-40">
-            <q class="bg-white rounded-lg px-20 py-12 w-2/5 text-center italic text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore quasi, aliquid soluta amet iste praesentium aut deleniti, quos blanditiis et nihil sed explicabo a officia labore quibusdam?</q>
+        <section id="commentaire" class="flex items-center flex-col bg-jaune sm:pt-40 pt-10">
+            <q class="bg-white rounded-lg sm:px-20 py-12 md:w-2/5 w-4/5 text-center italic text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore quasi, aliquid soluta amet iste praesentium aut deleniti, quos blanditiis et nihil sed explicabo a officia labore quibusdam?</q>
             <h2 class="text-white mt-8 text-2xl font-semibold">Richard Beal</h2>
             <h3 class="text-white font-semibold pb-10">CSS Developer</h3>
             <div class="flex gap-4 pb-20">
@@ -98,8 +99,8 @@
                 <div class="point h-3 w-3 bg-white rounded-full"></div>
             </div>
         </section>
-        <section id="blog" class="bg-[url('../assets/img/blog-bg.jpg')] bg-cover bg-top w-full flex">
-            <div class="left w-1/3 bg-black bg-opacity-50 text-white flex flex-col justify-center font-medium p-36 pb-24">
+        <section id="blog" class="bg-[url('../assets/img/blog-bg.jpg')] bg-cover bg-top w-full flex flex-col md:flex-row  md:text-start text-center">
+            <div class="left md:w-1/3 bg-black bg-opacity-50 text-white flex flex-col justify-center font-medium xl:p-36 p-12 pb-24">
                 <h2 class="uppercase font-bold text-white text-2xl">our blog posts</h2>
                 <div class="trait border-2 border-white opacity-50 w-full h-1 my-4"></div>
                 <p>Chia hot chicken la croix ugh dreamcatcher man bun squid vaporwave kinfolk.</p>
@@ -110,7 +111,7 @@
                     <li class="bg-white py-4"><a href="" class="hover:text-orangefoncee text-black">Repudiandae, quibusdam alias!</a></li>
                 </ul>
             </div>
-            <div class="right w-2/3 p-20 pr-60 flex flex-col">
+            <div class="right md:w-2/3 h-5/6 sm:p-20 p-4 xl:pr-60 flex flex-col">
                 <div class="image object-cover">
                     <img src="assets/img/blog_item_01.jpg" class="w-full">
                 </div>
@@ -122,7 +123,7 @@
             </div>
         </section>
         <section id="contact" class="bg-gray-500 text-white font-medium flex flex-col justify-center items-center">
-            <div class="contact-top flex flex-col justify-center items-center w-1/5 text-center py-20 ">
+            <div class="contact-top flex flex-col justify-center items-center md:w-1/5 text-center py-20 ">
                 <h2 class="uppercase text-2xl font-bold">Contact us</h2>
                 <div class="trait border-2 border-white opacity-50 w-full h-1 my-4 w-5/6"></div>
                 <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laudantium ratione, tenetur incidunt esse corrupti, nemo consequuntur voluptate neque dicta vero facilis magnam?</p>
@@ -138,31 +139,31 @@
             </div>
         </section>
     </main>
-    <footer class="bg-gray-600 text-white flex  justify-center gap-40 pb-10">
-        <div class="pt-16">
+    <footer class="bg-gray-600 text-white flex flex-col md:flex-row justify-center text-center md:text-start 2xl:gap-40 pb-10">
+        <div class="pt-16 md:w-1/5">
             <a href=""><h2 class="text-4xl font-titre font-black text-white uppercase hover:opacity-70"><span class="text-5xl text-jaune">t</span>inker</h2></a>
             <p>Copyright &copy; 2017 Your Compagny | Design: <span class="text-jaune">tempatemo</span></p> 
         </div>
-        <div>
+        <div class=" md:w-1/5">
             <h2 class="uppercase py-10 font-semibold">Location</h2>
             <div class="flex justify-center gap-2 divide-x-2 divide-white divide-opacity-10 ">
                 <p>30 Raffles Ave, <br>Sigapore 039803</p>
                 <p class="pl-2">1 Republic Blvd, <br>Singapore 038975</p>
             </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col md:w-1/5">
             <h2 class="uppercase py-10 font-semibold">more info</h2>
             <p class=""><strong>Phone</strong>: 010-020-0340</p>
             <p class=""><strong>Email</strong>: tk@company.co</p>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col md:w-1/5">
             <h2 class="uppercase py-10 font-semibold">get social with us</h2>
-            <div class="flex gap-2">
-                <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></div>
-                <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></div>
-                <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></div>
-                <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></div>
-                <div class="bg-white w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M256 8C119.3 8 8 119.3 8 256s111.3 248 248 248 248-111.3 248-248S392.7 8 256 8zm164 114.4c29.5 36 47.4 82 47.8 132-7-1.5-77-15.7-147.5-6.8-5.8-14-11.2-26.4-18.6-41.6 78.3-32 113.8-77.5 118.3-83.5zM396.4 97.9c-3.8 5.4-35.7 48.3-111 76.5-34.7-63.8-73.2-116.2-79-124 67.2-16.2 138 1.3 190.1 47.5zm-230.5-33.3c5.6 7.7 43.4 60.1 78.5 122.5-99.1 26.3-186.4 25.9-195.8 25.8C62.4 147.2 106.7 92.6 165.9 64.6zM44.2 256.3c0-2.2 0-4.3 .1-6.5 9.3 .2 111.9 1.5 217.7-30.1 6.1 11.9 11.9 23.9 17.2 35.9-76.6 21.6-146.2 83.5-180.5 142.3C64.8 360.4 44.2 310.7 44.2 256.3zm81.8 167.1c22.1-45.2 82.2-103.6 167.6-132.8 29.7 77.3 42 142.1 45.2 160.6-68.1 29-150 21.1-212.8-27.9zm248.4 8.5c-2.2-12.9-13.4-74.9-41.2-151 66.4-10.6 124.7 6.8 131.9 9.1-9.4 58.9-43.3 109.8-90.8 142z"/></svg></div>
+            <div class="flex justify-center flex-wrap gap-2">
+                <a href=""><div class="bg-white hover:bg-orangefoncee w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="12.5" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></div></a>
+                <a href=""><div class="bg-white hover:bg-orangefoncee w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></div></a>
+                <a href=""><div class="bg-white hover:bg-orangefoncee w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></div></a>
+                <a href=""><div class="bg-white hover:bg-orangefoncee w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></div></a>
+                <a href=""><div class="bg-white hover:bg-orangefoncee w-8 h-8 rounded-full flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#4b5563" d="M256 8C119.3 8 8 119.3 8 256s111.3 248 248 248 248-111.3 248-248S392.7 8 256 8zm164 114.4c29.5 36 47.4 82 47.8 132-7-1.5-77-15.7-147.5-6.8-5.8-14-11.2-26.4-18.6-41.6 78.3-32 113.8-77.5 118.3-83.5zM396.4 97.9c-3.8 5.4-35.7 48.3-111 76.5-34.7-63.8-73.2-116.2-79-124 67.2-16.2 138 1.3 190.1 47.5zm-230.5-33.3c5.6 7.7 43.4 60.1 78.5 122.5-99.1 26.3-186.4 25.9-195.8 25.8C62.4 147.2 106.7 92.6 165.9 64.6zM44.2 256.3c0-2.2 0-4.3 .1-6.5 9.3 .2 111.9 1.5 217.7-30.1 6.1 11.9 11.9 23.9 17.2 35.9-76.6 21.6-146.2 83.5-180.5 142.3C64.8 360.4 44.2 310.7 44.2 256.3zm81.8 167.1c22.1-45.2 82.2-103.6 167.6-132.8 29.7 77.3 42 142.1 45.2 160.6-68.1 29-150 21.1-212.8-27.9zm248.4 8.5c-2.2-12.9-13.4-74.9-41.2-151 66.4-10.6 124.7 6.8 131.9 9.1-9.4 58.9-43.3 109.8-90.8 142z"/></svg></div></a>
             </div>
         </div>
     </footer>
