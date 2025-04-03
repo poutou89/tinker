@@ -1020,6 +1020,26 @@ video {
   background-image: url('/assets/img/blog-bg.jpg');
 }
 
+.bg-\[url\(\'assets\/img\/about-bg\.jpg\'\)\] {
+  background-image: url('assets/img/about-bg.jpg');
+}
+
+.bg-\[url\(\'assets\/img\/banner_bg\.jpg\'\)\] {
+  background-image: url('assets/img/banner_bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/about-bg\.jpg\'\)\] {
+  background-image: url('../assets/img/about-bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/banner_bg\.jpg\'\)\] {
+  background-image: url('../assets/img/banner_bg.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/blog-bg\.jpg\'\)\] {
+  background-image: url('../assets/img/blog-bg.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
